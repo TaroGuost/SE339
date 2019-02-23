@@ -36,8 +36,6 @@ public class VehicleController {
     {
         if(v == null)
             throw new IllegalStateException("Vehicle can not be null");
-        if(v.getId() == null)
-            throw new IllegalStateException("ID can not be null");
         if(v.getMake() == null)
             throw new IllegalStateException("make can not be null");
         if(v.getModel() == null)
@@ -46,8 +44,6 @@ public class VehicleController {
             throw new IllegalStateException("ModelYear can not be null");
         if(v.getRegistration() == null)
             throw new IllegalStateException("Registration can not be null");
-        if(v.getRegistration().getId() == null)
-            throw new IllegalStateException("Registration ID can not be null");
         if(v.getRegistration().getLicensedTo() == null)
             throw new IllegalStateException("getLicensedTO can not be null");
         if(v.getRegistration().getLicensePlate() == null)

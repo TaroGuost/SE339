@@ -32,7 +32,7 @@ public class DriverController {
         if (driver.getVehicleId() == null) {
             throw new IllegalStateException("The driver needs to have a vehicle assigned to him.");
         }
-        if(driver.getPhone_number() == null)
+        if(driver.getphoneNumber() == null)
         {
             throw new IllegalStateException("Phone number can not be null");
         }

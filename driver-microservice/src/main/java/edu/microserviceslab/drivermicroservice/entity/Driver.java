@@ -20,8 +20,8 @@ public class Driver {
     @Column(name = "last_name")
     private String lastName;
 
-    @Column(name = "phone_number")
-    private String phone_number;
+    @Column(name = "phoneNumber")
+    private String phoneNumber;
 
     @Column(name = "vehicle_id")
     private Long vehicleId;
@@ -33,7 +33,7 @@ public class Driver {
         this.id = id;
         this.firstName = firstname;
         this.lastName = lastname;
-        this.phone_number = phone_number;
+        this.phoneNumber = phone_number;
         this.vehicleId = vehicleId;
     }
 
@@ -69,11 +69,11 @@ public class Driver {
         this.vehicleId = vehicleId;
     }
 
-    public String getPhone_number()
-    {return phone_number;}
+    public String getphoneNumber()
+    {return phoneNumber;}
 
-    public void setPhone_number(String number)
-    {phone_number = number;}
+    public void setphoneNumber(String number)
+    {phoneNumber = number;}
 
     @Override
     public boolean equals(Object o) {

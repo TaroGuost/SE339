@@ -44,14 +44,8 @@ public class UsageController {
             throw new IllegalStateException("usageStatistic can not be null");
         if(temp.getCreatedDate() == null)
             throw new IllegalStateException("CreateDate can not be null");
-        if(temp.getDriverFullname() == null)
-            throw new IllegalStateException("DriverFullname can not be null");
-        if(temp.getDriverId() == null)
-            throw new IllegalStateException("DriverID  can not be null");
         if(temp.getFuelLevel() == null)
             throw new IllegalStateException("FuelLevel can not be null");
-        if(temp.getId() == null)
-            throw new IllegalStateException("ID can not be null");
         if(temp.getLatitude() == null)
             throw new IllegalStateException("Latitude can not be null");
         if(temp.getLongitude() == null)
@@ -62,8 +56,6 @@ public class UsageController {
             throw new IllegalStateException("speed  can not be null");
         if(temp.getVehicleId() == null)
             throw new IllegalStateException("Vehicle id can not be null");
-        if(temp.getVehicleLicensePlate() == null)
-            throw new IllegalStateException("vehicle License Plate can not be null");
 
         usageService.addUsageStatistic(temp);
         return temp;
